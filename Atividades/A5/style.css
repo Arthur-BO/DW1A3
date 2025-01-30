@@ -1,0 +1,59 @@
+/* Level 1 */
+
+plate {
+    margin-bottom: 12px;
+}
+
+/* Level 2 */
+
+bento {
+    margin-bottom: 12px;
+}
+
+/* Level 3 */
+
+#fancy {
+    margin-bottom: 12px;
+}
+
+/* Level 4 */
+
+plate apple {
+    margin-bottom: 12px;
+}
+
+/* Level 5 */
+
+#fancy> .pickle {
+    margin-bottom: 12px;
+}
+
+/* Level 6 */
+
+.small {
+    margin-bottom: 12px;
+}
+
+/* Level 7 */
+
+orange.small {
+    margin-bottom: 12px;
+}
+
+/* Level 8 */
+
+bento orange.small {
+    margin-bottom: 12px;
+}
+
+/* Level 9 */
+
+plate,bento {
+    margin-bottom: 12px;
+}
+
+/* Level 10 */
+
+* {
+    margin-bottom: 12px;
+}
