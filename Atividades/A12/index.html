@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="header">
+        <div class="titulo">Formulário de contato</div>
+    </div>
+    
+    <form>
+    <div class="formulario">
+        <div class="inp-nome">
+            <label for="inp-nome">Nome e Sobrenome</label><br>
+        <input type="text" id="nome">
+    </div>
+        <div class="inp-email">
+            <label for="inp-email">Email</label><br>
+        <input type="email" id="email">
+    </div>
+        <div class="inp-telefone">
+            <label for="inp-telefone">Telefone</label><br>
+        <input type="tel" id="telefone">
+    </div>
+        <div class="mensagem">
+            <label for="mensagem">Mensagem</label><br>
+    </div>
+        <div class="rd-contato">Como prefere o nosso contato?
+        <input type="radio" id="rd-contato" value="1" required> 
+        <label for="rd-contato">Email</label>
+        <input type="radio" id="rd-contato" value="2">
+        <label for="rd-contato">Telefone</label>
+        <input type="radio" id="rd-contato" value="3">
+        <label for="rd-contato">Zap</label>
+    </div>
+        <div class="horario">Qual horário prefere ser atendido?
+            <select name="slc-horario" id="slc-horario">
+                <option value="1">Manhã</option>
+                <option value="2">Tarde</option>
+                <option value="3">Noite</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check">Gostaria de receber nossas novidades por Email?</label>
+        </div>
+
+        <div class="btn-enviar">
+            <button class="btn-enviar-form">Enviar formulário</button>
+        </div>
+    </div>
+</form>
+
+<div class="tabela">
+    <table>
+        <tr class="linha">
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+        <tr class="linha"> 
+            <th>Segunda</th>
+            <th>8h - 20h</th>
+        </tr>
+        <tr class="linha">
+            <th>Terça</th>
+            <th>8h - 20h</th>
+        </tr>
+        <tr class="linha"> 
+            <th>Quarta</th>
+            <th>8h - 20h</th>
+        </tr>
+        <tr class="linha">
+            <th>Quinta</th>
+            <th>8h - 20h</th>
+        </tr>
+        <tr class="linha">
+            <th>Sexta</th>
+            <th>8h - 20h</th>
+        </tr>
+
+    </table>
+</div>
+</body>
+<footer>
+    <div class="rodape">
+        Desenvolvido por Arthur Barbosa de Oliveira
+    </div>
+</footer>
+</html>

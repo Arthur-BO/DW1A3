@@ -1,0 +1,83 @@
+.header {
+    background-color: red;
+    justify-content: center;
+    display: flex;
+}
+
+.header >.titulo {
+    color:white;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.formulario {
+    margin-top: 25px;
+}
+
+.inp-nome {
+    margin: 20px;
+}
+
+.inp-email {
+    margin: 20px;
+}
+
+.inp-telefone {
+    margin: 20px;
+}
+
+.mensagem {
+    margin: 20px;
+}
+
+.rd-contato {
+    margin: 20px;
+}
+
+.horario {
+    margin: 20px;
+}
+
+.check {
+    margin: 20px;
+}
+
+
+.btn-enviar {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.btn-enviar >.btn-enviar-form {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+}
+
+.rodape {
+    justify-content: center;
+    display: flex;
+    color: white;
+    background-color: red;
+    margin-top: 65px;
+}
+
+.tabela {
+    background-color: red;
+    color: white;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.tabela >.linha {
+    border: 1px;
+    border-color: white;
+}
