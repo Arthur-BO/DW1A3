@@ -1,0 +1,53 @@
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: rebeccapurple;
+      margin: 20px 0;
+      transition: border-radius 0.3s;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .control-group label {
+      width: 150px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: rebeccapurple;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    textarea {
+      width: 300px;
+      height: 100px;
+      margin-top: 20px;
+    }

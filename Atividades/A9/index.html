@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Editor de Border Radius</title>
+</head>
+<body>
+  <h1>Editor de Border Radius</h1>
+  <div class="box" id="box"></div>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="top-left">Canto Superior Esquerdo:</label>
+      <input type="number" id="top-left" min="0" value="0" /> px
+    </div>
+    <div class="control-group">
+      <label for="top-right">Canto Superior Direito:</label>
+      <input type="number" id="top-right" min="0" value="0" /> px
+    </div>
+    <div class="control-group">
+      <label for="bottom-left">Canto Inferior Esquerdo:</label>
+      <input type="number" id="bottom-left" min="0" value="0" /> px
+    </div>
+    <div class="control-group">
+      <label for="bottom-right">Canto Inferior Direito:</label>
+      <input type="number" id="bottom-right" min="0" value="0" /> px
+    </div>
+    <button id="copy-btn">Copiar CSS</button>
+  </div>
+
+  <textarea id="css-output" readonly></textarea>
+
+  <script>
+    const box = document.getElementById('box');
+    const topLeft = document.getElementById('top-left');
+    const topRight = document.getElementById('top-right');
+    const bottomLeft = document.getElementById('bottom-left');
+    const bottomRight = document.getElementById('bottom-right');
+    const cssOutput = document.getElementById('css-output');
+    const copyBtn = document.getElementById('copy-btn');
+
+    function updateBorderRadius() {
+      const topLeftValue = topLeft.value || 0;
+      const topRightValue = topRight.value || 0;
+      const bottomLeftValue = bottomLeft.value || 0;
+      const bottomRightValue = bottomRight.value || 0;
+
+      const borderRadiusValue = `${topLeftValue}px ${topRightValue}px ${bottomRightValue}px ${bottomLeftValue}px`;
+      box.style.borderRadius = borderRadiusValue;
+
+      cssOutput.value = `border-radius: ${borderRadiusValue};`;
+    }
+
+    function copyToClipboard() {
+      cssOutput.select();
+      document.execCommand('copy');
+      alert('Código CSS copiado para a área de transferência!');
+    }
+
+    topLeft.addEventListener('input', updateBorderRadius);
+    topRight.addEventListener('input', updateBorderRadius);
+    bottomLeft.addEventListener('input', updateBorderRadius);
+    bottomRight.addEventListener('input', updateBorderRadius);
+    copyBtn.addEventListener('click', copyToClipboard);
+
+    // Inicializar com valores padrão
+    updateBorderRadius();
+  </script>
+</body>
+</html>
